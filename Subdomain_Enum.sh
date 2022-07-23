@@ -22,9 +22,9 @@ if [ ! -d "$screenshot_path" ];then
 	mkdir $screenshot_path
 fi
 
-#stuff
-echo -e "${RED} [+] Checkin' who it is ... ${RESET}"
+
 #See Whois
+echo -e "${RED} [+] Checkin' who it is ... ${RESET}"
 whois $1 > $info_path/whois.txt
 
 #Find subdomains
